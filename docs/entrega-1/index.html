@@ -121,6 +121,15 @@
 <div class="content ">
   <h1 id="mecanizado-cnc">Mecanizado CNC</h1>
 <p>Ejemplo de mecanizado de producto, en este caso Silla Fresia.</p>
+<h1 id="indice">Indice</h1>
+<ul>
+<li><a href="#Planimetr%C3%ADa">Planimetría</a></li>
+<li><a href="#Pasos">Pasos</a></li>
+<li><a href="#Proceso-Digital">Proceso Digital</a></li>
+<li><a href="#videos-simulaci%C3%B3n">Videos Simulación</a></li>
+<li><a href="#l%C3%ADnea-horizontal">Proceso Práctico</a></li>
+<li><a href="#galeria-de-fotos">Galería De Fotos</a></li>
+</ul>
 <h1 id="planimetría-silla-fresia">Planimetría Silla Fresia</h1>
 <p><img src="/img/PLANOS2/f01.png" alt="Planimetría_1">
 <img src="/img/PLANOS2/f02.png" alt="Planimetría_1">
@@ -129,51 +138,51 @@
 <ol>
 <li>Definir área de trabajo: Plancha de Terciado. (selección en SKETCH, con visualización en TOP), se selecciona el plano XY para crear un cuadrado de 1220X1220 mm (media plancha de terciado).</li>
 </ol>
-<p><img src="/img/CNC/a.PNG" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/a.png" alt="Planimetría_1"></p>
 <ol start="2">
 <li>Sobre el cuadrado se realiza un EXTRUDE de 15mm hacia arriba, luego con MOVE/COPY se mueve la silla sobre la plancha por capas, cambiándolas al plano horizontal. Para esto se usa el comando ALIGN. (usar FLIP para que todas las piezas queden en la misma área de trabajo)</li>
 </ol>
-<p><img src="/img/CNC/b.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/b.png" alt="Planimetría_1"></p>
 <ol start="3">
 <li>Luego se deber ir a DISEÑO&gt;MANUFACTURA, en SETUP se escoge la maquina Autodesk CNC de 3 ejes genérica.</li>
 </ol>
-<p><img src="/img/CNC/c.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/c.png" alt="Planimetría_1"></p>
 <ol start="4">
 <li>En Stock&gt;from solid se selecciona la plancha anteriormente creada y las piezas a cortar. Para esto se debe apagar la plancha y luego en “orientación” clickear en “Select Z axis/plane &amp; X axis”. Luego se prende la plancha y se orienta el área de trabajo con el eje X frente a nosotros y el eje Y hacia el fondo (y Z como altura).</li>
 </ol>
-<p><img src="/img/CNC/d.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/d.png" alt="Planimetría_1"></p>
 <ol start="5">
 <li>Para realizar el 2D contour, se seleccionan las aristas de la base y la herramienta de corte; FRESA de 6mm (flat end mil). Aparecerán unas líneas que indican la trayectoria de la FRESA para realizar el mecanizado. *botón derecho simular.</li>
 </ol>
-<p><img src="/img/CNC/e.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/e.png" alt="Planimetría_1"></p>
 <ol start="6">
 <li>Se debe editar la profundidad de la plancha en Contour2D&gt;passes&gt;multiple dephts y se debe cambiar el maximun roughing a 3mm. Ahora la FRESA recortara la plancha en 5 pasos.</li>
 </ol>
-<p><img src="/img/CNC/f.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/f.png" alt="Planimetría_1"></p>
 <ol start="7">
 <li>Usando el comando 2D POCKET, se vuelve a seleccionar passes&gt;multiple dephts&gt; y cambiar el máximum roughing a 3mm. Esto rebajará el área interna seleccionada.</li>
 </ol>
-<p><img src="/img/CNC/g.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/g.png" alt="Planimetría_1"></p>
 <ol start="8">
 <li>Luego, para realizar el área externa, se vuelve a seguir la sucesión de pasos indicada en el PASO 6, que indica el trayecto de la herramienta.  Finalmente, al terminar quedara la pieza suelta por lo que para evitar que se rompa la plancha se deben ajustar los TABS en width: 6mm ; Height: 3mm ; Distance: 350mm.</li>
 </ol>
-<p><img src="/img/CNC/h.jpeg" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/h.png" alt="Planimetría_1"></p>
 <ol start="9">
 <li>Se hace una simulación final, en la que se mostraran todos los pasos anteriores con la pieza mecanizada.</li>
 </ol>
-<p><img src="/img/CNC/9.PNG" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/9.png" alt="Planimetría_1"></p>
 <ol start="10">
 <li>Para los rebajes y generar flexibilidad en el material, a base de recortes. A continuación, creamos un sketch en la cara inferior de nuestra figura. Seleccionamos un rectángulo, para hacer un stock, debe ser de 480mm x 560 mm (aproximadamente, no hay problema con que sea distinto, lo importante es que sea más grande que la figura inicial).</li>
 </ol>
-<p><img src="/img/CNC/10.PNG" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/10.png" alt="Planimetría_1"></p>
 <ol start="11">
 <li>Apagamos la capa de la figura 1 y extruimos la figura a 9mm y volvemos a prender la capa de la figura 1, dándole un Opacity Control de 10%. Luego, encendemos los mecanizadores.</li>
 </ol>
-<p><img src="/img/CNC/11.PNG" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/11.png" alt="Planimetría_1"></p>
 <ol start="12">
 <li>En manufacture, hacemos set up y elegimos la máquina (Orientation Type: miling, Orientation: select z axis/ plane &amp; X axis, Z axis: Face, X axis: Edge), apretamos 2D contour (multiple depths: máximum 3mm), después, Trace (de 2D), seleccionamos las líneas para que la fresa las siga, con un stock to leave de 4, 5mm. Por último, hacemos la simulación.</li>
 </ol>
-<p><img src="/img/CNC/12.PNG" alt="Planimetría_1"></p>
+<p><img src="/img/CNC/12.png" alt="Planimetría_1"></p>
 <h1 id="proceso-digital">Proceso Digital</h1>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
@@ -181,222 +190,134 @@
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//1.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//1.jpeg" alt="1st" />
-				    </div>
-			      <figcaption>
-		          <p>1st</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//1.jpeg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//10.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//10.PNG" alt="10th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//10.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//10.png" alt="10th" />
 				    </div>
 			      <figcaption>
 		          <p>10th</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//10.PNG" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//10.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//11.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//11.PNG" alt="11th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//11.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//11.png" alt="11th" />
 				    </div>
 			      <figcaption>
 		          <p>11th</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//11.PNG" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//11.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//12.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//12.PNG" alt="12th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//12.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//12.png" alt="12th" />
 				    </div>
 			      <figcaption>
 		          <p>12th</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//12.PNG" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//12.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//2.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//2.PNG" alt="2nd" />
-				    </div>
-			      <figcaption>
-		          <p>2nd</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//2.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//3.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//3.PNG" alt="3rd" />
-				    </div>
-			      <figcaption>
-		          <p>3rd</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//3.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//4.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//4.PNG" alt="4th" />
-				    </div>
-			      <figcaption>
-		          <p>4th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//4.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//5.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//5.PNG" alt="5th" />
-				    </div>
-			      <figcaption>
-		          <p>5th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//5.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//6.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//6.PNG" alt="6th" />
-				    </div>
-			      <figcaption>
-		          <p>6th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//6.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//7.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//7.PNG" alt="7th" />
-				    </div>
-			      <figcaption>
-		          <p>7th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//7.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//8.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//8.PNG" alt="8th" />
-				    </div>
-			      <figcaption>
-		          <p>8th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//8.PNG" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//9.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//9.PNG" alt="9th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//9.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//9.png" alt="9th" />
 				    </div>
 			      <figcaption>
 		          <p>9th</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//9.PNG" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//9.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//a.PNG');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//a.PNG" alt="A" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//a.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//a.png" alt="A" />
 				    </div>
 			      <figcaption>
 		          <p>A</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//a.PNG" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//a.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//b.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//b.jpeg" alt="B" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//b.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//b.png" alt="B" />
 				    </div>
 			      <figcaption>
 		          <p>B</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//b.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//b.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//c.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//c.jpeg" alt="C" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//c.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//c.png" alt="C" />
 				    </div>
 			      <figcaption>
 		          <p>C</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//c.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//c.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//d.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//d.jpeg" alt="D" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//d.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//d.png" alt="D" />
 				    </div>
 			      <figcaption>
 		          <p>D</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//d.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//d.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//e.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//e.jpeg" alt="E" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//e.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//e.png" alt="E" />
 				    </div>
 			      <figcaption>
 		          <p>E</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//e.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//e.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//f.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//f.jpeg" alt="F" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//f.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//f.png" alt="F" />
 				    </div>
 			      <figcaption>
 		          <p>F</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//f.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//f.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//g.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//g.jpeg" alt="G" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//g.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//g.png" alt="G" />
 				    </div>
 			      <figcaption>
 		          <p>G</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//g.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//g.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//h.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//h.jpeg" alt="H" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//h.png');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//h.png" alt="H" />
 				    </div>
 			      <figcaption>
 		          <p>H</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//h.jpeg" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/CNC//h.png" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -491,6 +412,7 @@
 <img src="/img/galeria/cnc-2.jpeg" alt="CNC_1">
 <img src="/img/galeria/cnc-3.jpeg" alt="CNC_1">
 <img src="/img/galeria/cnc-4.jpeg" alt="CNC_1"></p>
+<h1 id="galeria-de-fotos">Galeria de Fotos</h1>
 <p>
 
 
