@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Entrega 3 - Camila Melibosky - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://cmelibosky.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://cmelibosky.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://cmelibosky.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-dococumentación">
+      <a href="/docs/">
+        <span>Dococumentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/2planimetrias/">Entrega 1</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/3mecanizado-cnc/">Entrega 2</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://cmelibosky.github.io/docs/4desbastes/">Entrega 3</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/1post-1/">Post 1</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/ejemplo/">Ejemplos Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Entrega 3</h1>
+<div class="content ">
+  <h1 id="desbaste-cnc">Desbaste CNC</h1>
+<p>Ejemplo de desbaste de producto, en este caso con el respaldo de la Silla Fresia.</p>
+<h1 id="indice">Indice</h1>
+<ul>
+<li><a href="#Proceso-de-Desbaste">Proceso de Desbaste</a></li>
+<li><a href="#Videos">Videos</a></li>
+</ul>
+<h1 id="proceso-digital-de-desbastes-y-cortes-paralelos">Proceso Digital de Desbastes y cortes paralelos.</h1>
+<p>Generamos un cuerpo que tapara el respaldo en todo su contorno. Luego generamos otro rectangulo que solamente estuviera en el contorno del respaldo, el cual guiaria a la Fresa a delimitar su proceso.</p>
+<p><img src="/img/DESBASTE/1.png" alt="Desbaste">
+<img src="/img/DESBASTE/2.png" alt="Desbaste">
+<img src="/img/DESBASTE/3.png" alt="Desbaste">
+<img src="/img/DESBASTE/4.png" alt="Desbaste"></p>
+<p>Luego para el siguiente corte, que serian los cortes paralelos, debiamos seleccionar el rectangulo hecho que estaba delimitado por el respaldo junto a este mismo para que la fresa pudiera trabajar la madera de entre medio respetando las delimitaciones.</p>
+<p><img src="/img/DESBASTE/5.png" alt="Desbaste">
+<img src="/img/DESBASTE/6.png" alt="Desbaste">
+<img src="/img/DESBASTE/7.png" alt="Desbaste"></p>
+<p>Para el siguiente paso debiamos copiar y pegar el setup hecho para el corte paralelo y a este cambiarle su configuraacion para que ese corte fuese perpendicular al anterior.
+Asi la fresa no trabajaria solo en un sentido si no que en ambos, cubriendo mas aun la superficie de madera.</p>
+<p><img src="/img/DESBASTE/8.png" alt="Desbaste">
+<img src="/img/DESBASTE/9.png" alt="Desbaste"></p>
+<p>Al simular los cortes, nos pudimos dar cuenta de que habian colisiones entre la fresa y la madera. Esto ocurre debido a que la fresa no es lo suficientemente larga por lo que su parte superior topa con el cuerpo de madera.</p>
+<p><img src="/img/DESBASTE/10.png" alt="Desbaste"></p>
+<p>Para solucionar esto tuvimos que modificar la fresa y alargar su longitud por debajo de la parte &ldquo;metalica&rdquo;. Asi entonces la fresa no toparia con el cuerpo y podria hacer bien su trabajo sin colisionar.</p>
+<p><img src="/img/DESBASTE/11.png" alt="Desbaste">
+<img src="/img/DESBASTE/12.png" alt="Desbaste"></p>
+<p>Para terminar, cambie la fresa para los procesos de corte paralelo ya que tal y como nos explico el profesor estafresa tiene un mejor acabado para estos cortes. Tambien tuve que alargar la fresa para que esta no colisionara con el cuerpo de madera.</p>
+<p><img src="/img/DESBASTE/13.png" alt="Desbaste">
+<img src="/img/DESBASTE/14.png" alt="Desbaste"></p>
+<p>Finalmente en esta foto se pueden apreciar todos los cortes de desbaste y paralelos hechos al cuerpo de madera, los cuales formaran el respaldo de la silla fresia.</p>
+<p><img src="/img/DESBASTE/20.png" alt="Desbaste"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h1 id="videos-simulación">Videos Simulación</h1>
+<p><div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/video1.mp4"  type="video/mp4">
+    </video>
+</div>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/video2.mp4"  type="video/mp4">
+    </video>
+</div>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/video3.mp4"  type="video/mp4">
+    </video>
+</div></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h1 id="proceso-práctico">Proceso Práctico</h1>
+<p><img src="/img/galeria/cnc-1.jpeg" alt="CNC_1">
+<img src="/img/galeria/cnc-2.jpeg" alt="CNC_1">
+<img src="/img/galeria/cnc-3.jpeg" alt="CNC_1">
+<img src="/img/galeria/cnc-4.jpeg" alt="CNC_1"></p>
+<h1 id="galeria-de-fotos">Galeria de Fotos</h1>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-1.jpeg" alt="Cnc 1" />
+				    </div>
+			      <figcaption>
+		          <p>Cnc 1</p>
+			      </figcaption>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-1.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-2.jpeg" alt="Cnc 2" />
+				    </div>
+			      <figcaption>
+		          <p>Cnc 2</p>
+			      </figcaption>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-2.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-3.jpeg" alt="Cnc 3" />
+				    </div>
+			      <figcaption>
+		          <p>Cnc 3</p>
+			      </figcaption>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-3.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-4.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-4.jpeg" alt="Cnc 4" />
+				    </div>
+			      <figcaption>
+		          <p>Cnc 4</p>
+			      </figcaption>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-4.jpeg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<p><a href="#top">[Volver Arriba]</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

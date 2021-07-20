@@ -9,28 +9,37 @@
     <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://cmelibosky.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entrega 1</title>
-      <link>https://cmelibosky.github.io/docs/entrega-1-copia/</link>
+      <link>https://cmelibosky.github.io/docs/2planimetrias/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/entrega-1-copia/</guid>
+      <guid>https://cmelibosky.github.io/docs/2planimetrias/</guid>
       <description>Planimetrias.</description>
     </item>
     
     <item>
       <title>Entrega 2</title>
-      <link>https://cmelibosky.github.io/docs/entrega-1/</link>
+      <link>https://cmelibosky.github.io/docs/3mecanizado-cnc/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/entrega-1/</guid>
+      <guid>https://cmelibosky.github.io/docs/3mecanizado-cnc/</guid>
       <description>Mecanizado CNC.</description>
     </item>
     
     <item>
-      <title>Post 1</title>
-      <link>https://cmelibosky.github.io/docs/post-1/</link>
+      <title>Entrega 3</title>
+      <link>https://cmelibosky.github.io/docs/4desbastes/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/post-1/</guid>
+      <guid>https://cmelibosky.github.io/docs/4desbastes/</guid>
+      <description>Desbaste CNC.</description>
+    </item>
+    
+    <item>
+      <title>Post 1</title>
+      <link>https://cmelibosky.github.io/docs/1post-1/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://cmelibosky.github.io/docs/1post-1/</guid>
       <description>Contenido de mi Post 1 con Hugo.</description>
     </item>
     
