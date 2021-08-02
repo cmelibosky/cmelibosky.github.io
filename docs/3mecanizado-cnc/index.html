@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Entrega 2 - Camila Melibosky - Taller Fabricación 2021</title>
+  <title>2- Mecanizado CNC - Camila Melibosky - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://cmelibosky.github.io/favicon.png">
@@ -91,23 +91,23 @@
   <ul>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/2planimetrias/">Entrega 1</a>
+      <a href="https://cmelibosky.github.io/docs/1post-1/">0- Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/2planimetrias/">1- Planimetrías</a>
     </li>
     
     <li class="active ">
-      <a href="https://cmelibosky.github.io/docs/3mecanizado-cnc/">Entrega 2</a>
+      <a href="https://cmelibosky.github.io/docs/3mecanizado-cnc/">2- Mecanizado CNC</a>
     </li>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/4desbastes/">Entrega 3</a>
+      <a href="https://cmelibosky.github.io/docs/4desbastes/">3- Mecanizado 2.5 Ejes</a>
     </li>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/5simulacionydise%C3%B1o/">Entrega 4</a>
-    </li>
-    
-    <li class="">
-      <a href="https://cmelibosky.github.io/docs/1post-1/">Post 1</a>
+      <a href="https://cmelibosky.github.io/docs/5simulacionydise%C3%B1o/">4- Simulación y Diseño Generativo</a>
     </li>
     
     <li class="">
@@ -125,208 +125,47 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">Entrega 2</h1>
+<h1 class="title">2- Mecanizado CNC</h1>
 <div class="content ">
   <h1 id="mecanizado-cnc">Mecanizado CNC</h1>
-<p>Ejemplo de mecanizado de producto, en este caso Silla Fresia.</p>
-<h1 id="indice">Indice</h1>
-<ul>
-<li><a href="#Planimetr%C3%ADa">Planimetría</a></li>
-<li><a href="#Pasos">Pasos</a></li>
-<li><a href="#Proceso-Digital">Proceso Digital</a></li>
-<li><a href="#videos-simulaci%C3%B3n">Videos Simulación</a></li>
-<li><a href="#l%C3%ADnea-horizontal">Proceso Práctico</a></li>
-<li><a href="#galeria-de-fotos">Galería De Fotos</a></li>
-</ul>
-<h1 id="planimetría-silla-fresia">Planimetría Silla Fresia</h1>
-<p><img src="/img/PLANOS2/f01.png" alt="Planimetría_1">
-<img src="/img/PLANOS2/f02.png" alt="Planimetría_1">
-<img src="/img/PLANOS2/f03.png" alt="Planimetría_1"></p>
-<h1 id="pasos-proceso-digital">Pasos Proceso Digital</h1>
-<ol>
-<li>Definir área de trabajo: Plancha de Terciado. (selección en SKETCH, con visualización en TOP), se selecciona el plano XY para crear un cuadrado de 1220X1220 mm (media plancha de terciado).</li>
-</ol>
-<p><img src="/img/CNC/a.png" alt="Planimetria_1"></p>
-<ol start="2">
-<li>Sobre el cuadrado se realiza un EXTRUDE de 15mm hacia arriba, luego con MOVE/COPY se mueve la silla sobre la plancha por capas, cambiándolas al plano horizontal. Para esto se usa el comando ALIGN. (usar FLIP para que todas las piezas queden en la misma área de trabajo)</li>
-</ol>
-<p><img src="/img/CNC/b.png" alt="Planimetría_1"></p>
-<ol start="3">
-<li>Luego se deber ir a DISEÑO&gt;MANUFACTURA, en SETUP se escoge la maquina Autodesk CNC de 3 ejes genérica.</li>
-</ol>
-<p><img src="/img/CNC/c.png" alt="Planimetría_1"></p>
-<ol start="4">
-<li>En Stock&gt;from solid se selecciona la plancha anteriormente creada y las piezas a cortar. Para esto se debe apagar la plancha y luego en “orientación” clickear en “Select Z axis/plane &amp; X axis”. Luego se prende la plancha y se orienta el área de trabajo con el eje X frente a nosotros y el eje Y hacia el fondo (y Z como altura).</li>
-</ol>
-<p><img src="/img/CNC/d.png" alt="Planimetría_1"></p>
-<ol start="5">
-<li>Para realizar el 2D contour, se seleccionan las aristas de la base y la herramienta de corte; FRESA de 6mm (flat end mil). Aparecerán unas líneas que indican la trayectoria de la FRESA para realizar el mecanizado. *botón derecho simular.</li>
-</ol>
-<p><img src="/img/CNC/e.png" alt="Planimetría_1"></p>
-<ol start="6">
-<li>Se debe editar la profundidad de la plancha en Contour2D&gt;passes&gt;multiple dephts y se debe cambiar el maximun roughing a 3mm. Ahora la FRESA recortara la plancha en 5 pasos.</li>
-</ol>
-<p><img src="/img/CNC/f.png" alt="Planimetría_1"></p>
-<ol start="7">
-<li>Usando el comando 2D POCKET, se vuelve a seleccionar passes&gt;multiple dephts&gt; y cambiar el máximum roughing a 3mm. Esto rebajará el área interna seleccionada.</li>
-</ol>
-<p><img src="/img/CNC/g.png" alt="Planimetría_1"></p>
-<ol start="8">
-<li>Luego, para realizar el área externa, se vuelve a seguir la sucesión de pasos indicada en el PASO 6, que indica el trayecto de la herramienta.  Finalmente, al terminar quedara la pieza suelta por lo que para evitar que se rompa la plancha se deben ajustar los TABS en width: 6mm ; Height: 3mm ; Distance: 350mm.</li>
-</ol>
-<p><img src="/img/CNC/h.png" alt="Planimetría_1"></p>
-<ol start="9">
-<li>Se hace una simulación final, en la que se mostraran todos los pasos anteriores con la pieza mecanizada.</li>
-</ol>
-<p><img src="/img/CNC/9.png" alt="Planimetría_1"></p>
-<ol start="10">
-<li>Para los rebajes y generar flexibilidad en el material, a base de recortes. A continuación, creamos un sketch en la cara inferior de nuestra figura. Seleccionamos un rectángulo, para hacer un stock, debe ser de 480mm x 560 mm (aproximadamente, no hay problema con que sea distinto, lo importante es que sea más grande que la figura inicial).</li>
-</ol>
-<p><img src="/img/CNC/10.png" alt="Planimetría_1"></p>
-<ol start="11">
-<li>Apagamos la capa de la figura 1 y extruimos la figura a 9mm y volvemos a prender la capa de la figura 1, dándole un Opacity Control de 10%. Luego, encendemos los mecanizadores.</li>
-</ol>
-<p><img src="/img/CNC/11.png" alt="Planimetría_1"></p>
-<ol start="12">
-<li>En manufacture, hacemos set up y elegimos la máquina (Orientation Type: miling, Orientation: select z axis/ plane &amp; X axis, Z axis: Face, X axis: Edge), apretamos 2D contour (multiple depths: máximum 3mm), después, Trace (de 2D), seleccionamos las líneas para que la fresa las siga, con un stock to leave de 4, 5mm. Por último, hacemos la simulación.</li>
-</ol>
-<p><img src="/img/CNC/12.png" alt="Planimetría_1"></p>
-<p><a href="#top">[Volver Arriba]</a></p>
-<h1 id="proceso-digital">Proceso Digital</h1>
+<h2 id="introducción">Introducción</h2>
+<p>Ejemplo de mecanizado de producto CNC, en este caso mecanizado para hacer una Silla Fresia.</p>
+<h3 id="máquina-cnc">Máquina CNC</h3>
 <p>
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//10.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//10.png" alt="10th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-1.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-1.jpeg" alt="Cnc 1" />
 				    </div>
 			      <figcaption>
-		          <p>10th</p>
+		          <p>Cnc 1</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//10.png" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-1.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//11.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//11.png" alt="11th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-2.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-2.jpeg" alt="Cnc 2" />
 				    </div>
 			      <figcaption>
-		          <p>11th</p>
+		          <p>Cnc 2</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//11.png" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-2.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//12.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//12.png" alt="12th" />
+				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-3.jpeg');" >
+				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-3.jpeg" alt="Cnc 3" />
 				    </div>
 			      <figcaption>
-		          <p>12th</p>
+		          <p>Cnc 3</p>
 			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//12.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//9.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//9.png" alt="9th" />
-				    </div>
-			      <figcaption>
-		          <p>9th</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//9.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//a.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//a.png" alt="A" />
-				    </div>
-			      <figcaption>
-		          <p>A</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//a.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//b.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//b.png" alt="B" />
-				    </div>
-			      <figcaption>
-		          <p>B</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//b.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//c.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//c.png" alt="C" />
-				    </div>
-			      <figcaption>
-		          <p>C</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//c.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//d.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//d.png" alt="D" />
-				    </div>
-			      <figcaption>
-		          <p>D</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//d.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//e.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//e.png" alt="E" />
-				    </div>
-			      <figcaption>
-		          <p>E</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//e.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//f.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//f.png" alt="F" />
-				    </div>
-			      <figcaption>
-		          <p>F</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//f.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//g.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//g.png" alt="G" />
-				    </div>
-			      <figcaption>
-		          <p>G</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//g.png" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/CNC//h.png');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/CNC//h.png" alt="H" />
-				    </div>
-			      <figcaption>
-		          <p>H</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/CNC//h.png" itemprop="contentUrl"></a>
+				    <a href="https://cmelibosky.github.io//img/galeria//cnc-3.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>
@@ -391,8 +230,96 @@
     </div>
 </div>
 </p>
-<h1 id="videos-simulación">Videos Simulación</h1>
-<p><div>
+<h4 id="cnc-control-númerico-por-computadora">CNC: Control Númerico por Computadora.</h4>
+<p>La función de mecanizado está determinada por un programa, el cuál controla las herramientas y por tanto sus movimientos en el bloque que se quiera mecanizar. La máquina está totalmente automatizada y controlada por una computadora.</p>
+<p>Para realizar este trabajo usamos una plancha de 122cm x 122cm x 15mm.</p>
+<p>La Silla Fresia esta construida por:</p>
+<ul>
+<li>2 Patas frontales</li>
+<li>2 Patas Posteriores</li>
+<li>2 Travesaños</li>
+<li>2 Largueros</li>
+<li>Asiento</li>
+<li>Respaldo</li>
+</ul>
+<h2 id="pasos-estructura-silla">Pasos Estructura Silla</h2>
+<p>A continuación mostraré cuales son los pasos que se requieren para poder realizar el mecanizado de una silla Fresia, a través de Fusion 360.</p>
+<ol>
+<li>Definir área de trabajo: Plancha de Terciado. (selección en SKETCH, con visualización en TOP), se selecciona el plano XY para crear un cuadrado de 1220X1220 mm (media plancha de terciado). Copiar las patas de la silla a usar.</li>
+</ol>
+<p><img src="/img/CNC/1a.png" alt="Planimetria_1"></p>
+<ol start="2">
+<li>Sobre el cuadrado se realiza un EXTRUDE de 15mm hacia arriba, luego con MOVE/COPY se mueve la silla sobre la plancha por capas, cambiándolas al plano horizontal. Para esto se usa el comando ALIGN. (usar FLIP para que todas las piezas queden en la misma área de trabajo)</li>
+</ol>
+<p><img src="/img/CNC/b.png" alt="Planimetría_1"></p>
+<ol start="3">
+<li>
+<p>Luego se deber ir a DISEÑO&gt;MANUFACTURA, en SETUP se escoge la maquina Autodesk CNC de 3 ejes genérica.</p>
+</li>
+<li>
+<p>En Stock&gt;from solid se selecciona la plancha anteriormente creada y las piezas a cortar. Para esto se debe apagar la plancha y luego en “orientación” clickear en “Select Z axis/plane &amp; X axis”. Luego se prende la plancha y se orienta el área de trabajo con el eje X frente a nosotros y el eje Y hacia el fondo (y Z como altura).</p>
+</li>
+</ol>
+<p><img src="/img/CNC/c.png" alt="Planimetría_1"></p>
+<ol start="5">
+<li>Para realizar el 2D contour, se seleccionan las aristas de la base y la herramienta de corte; FRESA de 6mm (flat end mil). Aparecerán unas líneas que indican la trayectoria de la FRESA para realizar el mecanizado. *botón derecho simular.</li>
+</ol>
+<p><img src="/img/CNC/d.png" alt="Planimetría_1"></p>
+<ol start="6">
+<li>Se debe editar la profundidad de la plancha en Contour2D&gt;passes&gt;multiple dephts y se debe cambiar el maximun roughing a 3mm. Ahora la FRESA recortara la plancha en 5 pasos.</li>
+</ol>
+<p><img src="/img/CNC/e.png" alt="Planimetría_1"></p>
+<ol start="7">
+<li>Usando el comando 2D POCKET, se vuelve a seleccionar passes&gt;multiple dephts&gt; y cambiar el máximum roughing a 3mm. Esto rebajará el área interna seleccionada.</li>
+</ol>
+<p><img src="/img/CNC/f.png" alt="Planimetría_1"></p>
+<ol start="8">
+<li>Luego, para realizar el área externa, se vuelve a seguir la sucesión de pasos indicada en el PASO 6, que indica el trayecto de la herramienta.  Finalmente, al terminar quedara la pieza suelta por lo que para evitar que se rompa la plancha se deben ajustar los TABS en width: 6mm ; Height: 3mm ; Distance: 350mm.</li>
+</ol>
+<p><img src="/img/CNC/h.png" alt="Planimetría_1"></p>
+<ol start="9">
+<li>Se hace una simulación final, en la que se mostraran todos los pasos anteriores con la pieza mecanizada.</li>
+</ol>
+<p><img src="/img/CNC/g.png" alt="Planimetría_1"></p>
+<ol start="10">
+<li>Todo este proceso anterior se debe realizar con cada una de las piezas de la silla.</li>
+</ol>
+<p><img src="/img/CNC/10.png" alt="Planimetría_1"></p>
+<ol start="11">
+<li>
+<p>Para los rebajes y generar flexibilidad en el material, a base de recortes. A continuación, creamos un sketch en la cara inferior de nuestra figura. Seleccionamos un rectángulo, para hacer un stock, debe ser de 480mm x 560 mm (aproximadamente, no hay problema con que sea distinto, lo importante es que sea más grande que la figura inicial).</p>
+</li>
+<li>
+<p>En manufacture, hacemos set up y elegimos la máquina (Orientation Type: miling, Orientation: select z axis/ plane &amp; X axis, Z axis: Face, X axis: Edge), apretamos 2D contour (multiple depths: máximum 3mm), después, Trace (de 2D), seleccionamos las líneas para que la fresa las siga, con un stock to leave de 4, 5mm. Por último, hacemos la simulación.</p>
+</li>
+</ol>
+<p>Finalmente, se realiza una simulación del proceso completo con todas las piezas.</p>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h2 id="pasos-para-el-asiento-de-la-silla">Pasos para el Asiento de la Silla</h2>
+<ol>
+<li>Generamos un cuadrado de 610 x 610 mm, extruyendolo luego de 9mm hacia el eje Z.</li>
+</ol>
+<p><img src="/img/CNC/a1.png" alt="Planimetría_1"></p>
+<ol start="2">
+<li>Hacemos nuevamente un set up para este. (De igual manera como lo hicimos para la estructura)</li>
+</ol>
+<p><img src="/img/CNC/a2.png" alt="Planimetría_1"></p>
+<ol start="3">
+<li>
+<p>Luego hacemos un contour 2D.</p>
+</li>
+<li>
+<p>Para terminar hacemos un trace de la siguiente manera; Stock to leave/Radial Stock Leave: 4.5mm. Esto hará que la fresa llegue a la mitad del ancho de la plancha, para así quedar con mas flexibilidad.</p>
+</li>
+</ol>
+<p><img src="/img/CNC/a3.png" alt="Planimetría_1"></p>
+<h2 id="planimetría-silla-fresia">Planimetría Silla Fresia</h2>
+<p><img src="/img/PLANOS2/f01.png" alt="Planimetría_1">
+<img src="/img/PLANOS2/f02.png" alt="Planimetría_1">
+<img src="/img/PLANOS2/f03.png" alt="Planimetría_1"></p>
+<h2 id="videos-simulación">Videos Simulación</h2>
+<h3 id="corte-primer-paso">Corte Primer paso</h3>
+<div>
     <video 
     width="100%" 
     height="450" 
@@ -400,6 +327,7 @@
     <source src="/img/video1.mp4"  type="video/mp4">
     </video>
 </div>
+<h3 id="corte-proceso-completo-pata-posterior">Corte Proceso Completo Pata Posterior</h3>
 <div>
     <video 
     width="100%" 
@@ -408,6 +336,7 @@
     <source src="/img/video2.mp4"  type="video/mp4">
     </video>
 </div>
+<h3 id="corte-proceso-asiento">Corte Proceso Asiento</h3>
 <div>
     <video 
     width="100%" 
@@ -415,14 +344,9 @@
     autoplay muted loop controls preload>
     <source src="/img/video3.mp4"  type="video/mp4">
     </video>
-</div></p>
+</div>
 <p><a href="#top">[Volver Arriba]</a></p>
-<h1 id="proceso-práctico">Proceso Práctico</h1>
-<p><img src="/img/galeria/cnc-1.jpeg" alt="CNC_1">
-<img src="/img/galeria/cnc-2.jpeg" alt="CNC_1">
-<img src="/img/galeria/cnc-3.jpeg" alt="CNC_1">
-<img src="/img/galeria/cnc-4.jpeg" alt="CNC_1"></p>
-<h1 id="galeria-de-fotos">Galeria de Fotos</h1>
+<h2 id="mecanizado-cnc-con-maquína-real">Mecanizado CNC con maquína real</h2>
 <p>
 
 
@@ -458,17 +382,6 @@
 		          <p>Cnc 3</p>
 			      </figcaption>
 				    <a href="https://cmelibosky.github.io//img/galeria//cnc-3.jpeg" itemprop="contentUrl"></a>
-				  </figure>
-				</div>
-				<div class="box">
-				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('https://cmelibosky.github.io//img/galeria//cnc-4.jpeg');" >
-				      <img itemprop="thumbnail" src="https://cmelibosky.github.io//img/galeria//cnc-4.jpeg" alt="Cnc 4" />
-				    </div>
-			      <figcaption>
-		          <p>Cnc 4</p>
-			      </figcaption>
-				    <a href="https://cmelibosky.github.io//img/galeria//cnc-4.jpeg" itemprop="contentUrl"></a>
 				  </figure>
 				</div>
 </div>

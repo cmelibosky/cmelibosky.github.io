@@ -8,7 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2020 19:30:08 +1000</lastBuildDate><atom:link href="https://cmelibosky.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Entrega 1</title>
+      <title>0- Fabricación Digital</title>
+      <link>https://cmelibosky.github.io/docs/1post-1/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://cmelibosky.github.io/docs/1post-1/</guid>
+      <description>Contenido de mi Post 1 con Hugo.</description>
+    </item>
+    
+    <item>
+      <title>1- Planimetrías</title>
       <link>https://cmelibosky.github.io/docs/2planimetrias/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -17,7 +26,7 @@
     </item>
     
     <item>
-      <title>Entrega 2</title>
+      <title>2- Mecanizado CNC</title>
       <link>https://cmelibosky.github.io/docs/3mecanizado-cnc/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -26,30 +35,21 @@
     </item>
     
     <item>
-      <title>Entrega 3</title>
+      <title>3- Mecanizado 2.5 Ejes</title>
       <link>https://cmelibosky.github.io/docs/4desbastes/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://cmelibosky.github.io/docs/4desbastes/</guid>
-      <description>Desbaste CNC.</description>
+      <description>Mecanizado 2.5 Ejes.</description>
     </item>
     
     <item>
-      <title>Entrega 4</title>
+      <title>4- Simulación y Diseño Generativo</title>
       <link>https://cmelibosky.github.io/docs/5simulacionydise%C3%B1o/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://cmelibosky.github.io/docs/5simulacionydise%C3%B1o/</guid>
       <description>Simulacion y Diseño Generativo.</description>
-    </item>
-    
-    <item>
-      <title>Post 1</title>
-      <link>https://cmelibosky.github.io/docs/1post-1/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://cmelibosky.github.io/docs/1post-1/</guid>
-      <description>Contenido de mi Post 1 con Hugo.</description>
     </item>
     
     <item>
