@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>4- Simulación y Diseño Generativo - Camila Melibosky - Taller Fabricación 2021</title>
+  <title>3- Mecanizado 2.5 Ejes - Camila Melibosky - Taller Fabricación 2021</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://cmelibosky.github.io/favicon.png">
@@ -102,11 +102,11 @@
       <a href="https://cmelibosky.github.io/docs/3mecanizado-cnc/">2- Mecanizado CNC</a>
     </li>
     
-    <li class="">
+    <li class="active ">
       <a href="https://cmelibosky.github.io/docs/4mecanizado-2.5/">3- Mecanizado 2.5 Ejes</a>
     </li>
     
-    <li class="active ">
+    <li class="">
       <a href="https://cmelibosky.github.io/docs/5simulacionydise%C3%B1o/">4- Simulación y Diseño Generativo</a>
     </li>
     
@@ -125,44 +125,54 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">4- Simulación y Diseño Generativo</h1>
+<h1 class="title">3- Mecanizado 2.5 Ejes</h1>
 <div class="content ">
-  <hr>
-<h1 id="0-diseño-original">0. Diseño Original</h1>
-<h1 id="1-plantear-el-probelma">1. Plantear el probelma</h1>
-<h1 id="2-simular-el-problema">2. Simular El problema</h1>
-<h1 id="3-propuesta-de-diseño-generativo">3. Propuesta de Diseño Generativo</h1>
-<h1 id="4-guia-para-el-rediseño-de-la-pieza">4. Guia para el rediseño de la pieza</h1>
+  <h1 id="mecanizado-25-ejes">Mecanizado 2.5 Ejes</h1>
+<hr>
+<p>En un mecanizado por corte de 2.5 ejes, la herramienta se puede llegar a mover en un máximo de 3 ejes de la máquina (XYZ), pero nunca se moverá en las tres coordenadas a la vez durante la trayectoria de corte.</p>
+<p>Este tipo de mecanizado sirve para que la fresa corte los planos en diferentes profundidades.</p>
+<p>Los mecanizados de corte de 2.5 ejes la mayoria de las veces son usados cuando la geometria a la que se quiere llegar es sencilla y para desbastar grandes cantidades de material de forma uniforme. A su vez se usan para acabados de paredes en 2.5 ejes cuando no se necesita un acabado superficial muy fino.</p>
+<p>En la siguiente imagen, la trayectoria de corte (lineas entre cortadas azules) están siempre en planos paralelos al XY que son los planos de la base, de modo que se trata de un mecanizado en 2.5 ejes.</p>
+<p><img src="/img/25.jpeg" alt="Desbaste"></p>
 <h1 id="desbaste-cnc">Desbaste CNC</h1>
 <p>Ejemplo de desbaste de producto, en este caso con el respaldo de la Silla Fresia.</p>
-<h1 id="indice">Indice</h1>
-<ul>
-<li><a href="#Proceso-de-Desbaste">Proceso de Desbaste</a></li>
-<li><a href="#Videos">Videos</a></li>
-</ul>
-<h1 id="proceso-digital-de-desbastes-y-cortes-paralelos">Proceso Digital de Desbastes y cortes paralelos.</h1>
-<p>Generamos un cuerpo que tapara el respaldo en todo su contorno. Luego generamos otro rectangulo que solamente estuviera en el contorno del respaldo, el cual guiaria a la Fresa a delimitar su proceso.</p>
+<h1 id="pasos-para-desbaste-respaldo-silla-fresia">Pasos para Desbaste Respaldo Silla Fresia</h1>
+<ol>
+<li>Generamos un cuerpo que tapara el respaldo en todo su contorno. Luego generamos otro rectangulo que solamente estuviera en el contorno del respaldo, el cual guiaria a la Fresa a delimitar su proceso.</li>
+</ol>
 <p><img src="/img/DESBASTE/1.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/2.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/3.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/4.png" alt="Desbaste"></p>
-<p>Luego para el siguiente corte, que serian los cortes paralelos, debiamos seleccionar el rectangulo hecho que estaba delimitado por el respaldo junto a este mismo para que la fresa pudiera trabajar la madera de entre medio respetando las delimitaciones.</p>
+<ol start="2">
+<li>Luego para el siguiente corte, que serian los cortes paralelos, debiamos seleccionar el rectangulo hecho que estaba delimitado por el respaldo junto a este mismo para que la fresa pudiera trabajar la madera de entre medio respetando las delimitaciones.</li>
+</ol>
 <p><img src="/img/DESBASTE/5.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/6.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/7.png" alt="Desbaste"></p>
-<p>Para el siguiente paso debiamos copiar y pegar el setup hecho para el corte paralelo y a este cambiarle su configuraacion para que ese corte fuese perpendicular al anterior.
-Asi la fresa no trabajaria solo en un sentido si no que en ambos, cubriendo mas aun la superficie de madera.</p>
+<ol start="3">
+<li>Para el siguiente paso debiamos copiar y pegar el setup hecho para el corte paralelo y a este cambiarle su configuraacion para que ese corte fuese perpendicular al anterior.
+Asi la fresa no trabajaria solo en un sentido si no que en ambos, cubriendo mas aun la superficie de madera.</li>
+</ol>
 <p><img src="/img/DESBASTE/8.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/9.png" alt="Desbaste"></p>
-<p>Al simular los cortes, nos pudimos dar cuenta de que habian colisiones entre la fresa y la madera. Esto ocurre debido a que la fresa no es lo suficientemente larga por lo que su parte superior topa con el cuerpo de madera.</p>
+<ol start="4">
+<li>Al simular los cortes, nos pudimos dar cuenta de que habian colisiones entre la fresa y la madera. Esto ocurre debido a que la fresa no es lo suficientemente larga por lo que su parte superior topa con el cuerpo de madera.</li>
+</ol>
 <p><img src="/img/DESBASTE/10.png" alt="Desbaste"></p>
-<p>Para solucionar esto tuvimos que modificar la fresa y alargar su longitud por debajo de la parte &ldquo;metalica&rdquo;. Asi entonces la fresa no toparia con el cuerpo y podria hacer bien su trabajo sin colisionar.</p>
+<ol start="5">
+<li>Para solucionar esto tuvimos que modificar la fresa y alargar su longitud por debajo de la parte &ldquo;metalica&rdquo;. Asi entonces la fresa no toparia con el cuerpo y podria hacer bien su trabajo sin colisionar.</li>
+</ol>
 <p><img src="/img/DESBASTE/11.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/12.png" alt="Desbaste"></p>
-<p>Para terminar, cambie la fresa para los procesos de corte paralelo ya que tal y como nos explico el profesor estafresa tiene un mejor acabado para estos cortes. Tambien tuve que alargar la fresa para que esta no colisionara con el cuerpo de madera.</p>
+<ol start="6">
+<li>Para terminar, cambie la fresa para los procesos de corte paralelo ya que tal y como nos explico el profesor estafresa tiene un mejor acabado para estos cortes. Tambien tuve que alargar la fresa para que esta no colisionara con el cuerpo de madera.</li>
+</ol>
 <p><img src="/img/DESBASTE/13.png" alt="Desbaste"></p>
 <p><img src="/img/DESBASTE/14.png" alt="Desbaste"></p>
-<p>Finalmente en esta foto se pueden apreciar todos los cortes de desbaste y paralelos hechos al cuerpo de madera, los cuales formaran el respaldo de la silla fresia.</p>
+<ol start="7">
+<li>Finalmente en esta foto se pueden apreciar todos los cortes de desbaste y paralelos hechos al cuerpo de madera, los cuales formaran el respaldo de la silla fresia.</li>
+</ol>
 <p><img src="/img/DESBASTE/20.png" alt="Desbaste"></p>
 <p><a href="#top">[Volver Arriba]</a></p>
 <h1 id="videos-simulación">Videos Simulación</h1>
