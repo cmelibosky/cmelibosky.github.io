@@ -132,118 +132,38 @@
 <h1 class="title">5- Impresión 3D</h1>
 <div class="content ">
   <hr>
-<h1 id="diseño-generativo">Diseño Generativo</h1>
-<p><img src="/img/DG.jpg" alt="Desbaste"></p>
-<blockquote>
-<p>Los ingenieros logran un peso ligero, mejoras de rendimiento, consolidación de piezas o sostenibilidad| Créditos: Autodesk</p>
-</blockquote>
-<p>El diseño generativo es un proceso iterativo que genera múltiples salidas de diseño cumpliendo con las restricciones predefinidas. Este proceso se utiliza en varios campos, como el arte, la arquitectura y el diseño de productos para producir salidas de sonidos, imágenes a modelos CAD.</p>
-<p>Uno de sus mayores beneficios es que este es un método rápido para explorar las posibilidades de diseño.</p>
-<p>El diseño generativo se basa en restricciones del mundo real y requisitos de rendimiento. Este está cambiando el proceso de diseño para que los ingenieros y diseñadores pueden resolver desafíos y encontrar soluciones de diseño que no hubieran podido concebir por sí mismos.</p>
-<h2 id="simulación-y-optimización-por-diseño-generativo">Simulación y Optimización por diseño generativo</h2>
-<p>Concepto para pasar de un modelo original a uno simulado. A través de este proceso seremos capaces de simular un problema que detectamos.</p>
-<p>El proposito es entender nuestro diseño y planteamiento original, para mediante las herramientas de simualcion y  diseño generativo entender como esta pieza se puede rediseñar según la perfomance deseada.</p>
-<p>En este ejercicio trabajaremos con un Perfil Alar; perfil de avión; pieza o sercha. La cual sabemos que se repite en el eje Y.</p>
-<p>Nuestro propósito es descubrir y solucionar el
-como podemos hacer mas liviana el ala. El peso del ala es directamente proporcional al cuanto consume el avion en combustible, al alivianar la pieza obtenemos mayor eficiencia energetica del avión. Mediante la simulación avanzamos en diseño para ver la carga estructural, y hacer una mucho mas ligera.</p>
-<p>Para conseguir el proposito existen 5 pasos guías por los que debemos pasar para lograrlo:</p>
-<ul>
-<li>
-<ol start="0">
-<li>Diseño Original</li>
-</ol>
-</li>
-<li>
+<h1 id="cura-software-de-impresión-3d">Cura; software de Impresión 3D.</h1>
+<p>Para poder realizar la impresión 3D se requiere de un software de corte, que muchas veces también es llamado laminador, y este se usa para poder convertir el modelo 3D en un archivo código G que proporcionará a la impresora 3D todas las instrucciones necesarias. Uno de estos programas es CURA.</p>
+<p><img src="/img/cura.PNG" alt="Desbaste"></p>
+<p>Cura, fue desarrollado por David Braam en 2014 y luego adoptada por la empresa Ultimaker. Este es un software de código abierto, es el más extendido en el mercado mundial para la fabricación aditiva. Al ser código abierto, Cura está en constante evolución.</p>
+<p>Una de las mejores características que tiene Cura, y que es por la cual es tan popular, es por su facilidad de uso. Además tiene soporte para diferentes formatos de archivo y compatibilidad con muchas impresores 3D.</p>
+<h1 id="software--pasos-para-imprimir-en-cura">Software- Pasos para Imprimir en Cura</h1>
 <ol>
-<li>Plantear el probelma</li>
+<li>Seleccionamos la impresora que nosotros queramos, en este caso seleccionamos: Creality Ender-3. Además seleccionas &ldquo;eSUN Purple PLA+&rdquo; con 0.4 mm Nozzle.</li>
 </ol>
-</li>
-<li>
+<p><img src="/img/IMP/1.png" alt="Desbaste"></p>
 <ol start="2">
-<li>Simular El problema</li>
+<li>Abrimos un archivo STL que tengamos modelo. En mi caso abrí un anillo que modele para el ramo de Modelación 3D el trimestre pasado.</li>
 </ol>
+<p><img src="/img/IMP/2.png" alt="Desbaste"></p>
+<ol start="3">
+<li>
+<p>Corroboramos las medidas en escala. Rotamos si es necesario.</p>
 </li>
 <li>
-<ol start="3">
-<li>Propuesta de Diseño Generativo</li>
-</ol>
+<p>Cambiamos la configuración para imprimir. Oprimimos &ldquo;Slice&rdquo;. Este proceso se llama slice, ya que genera una serie de capas al objeto</p>
 </li>
-<li>
-<ol start="4">
-<li>Guia para el rediseño de la pieza</li>
 </ol>
-</li>
-</ul>
-<p>Para el primer ejercicio la pieza que más nos interesa optimizar es la que se repita mas. En este caso:</p>
-<p>El Ala
-<img src="/img/DISE%C3%91O/apa.png" alt="Desbaste"></p>
-<h2 id="pasos-introducción-a-la-simulación-ala-avión">Pasos Introducción a la simulación; Ala Avión</h2>
-<ol>
-<li>Definimos el material de la pieza.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O/1.png" alt="Desbaste"></p>
-<ol start="2">
-<li>Planteamos el problema: Ponemos las restriccion; estas serán las piezas del ala que no van a tener movimiento. Fijas al emsamble.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O/2.png" alt="Desbaste"></p>
-<ol start="3">
-<li>Aplicamos las cargas. En la parte inferior del ala, que es donde se esta soportando toda la carga y peso del avión le pusimos una carga de 1000 newton (100 kilos). pre chequiamos para ver si es que podemos hacer el estudio.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O/3.png" alt="Desbaste"></p>
-<ol start="4">
-<li>Simulamos el problema: Apretar la tecla &ldquo;Solve&rdquo;, para saber como se va a comportar la pieza. las partes mas vulnerables son las mas delgadas, ahi es donde debemos tener mas precaucion y determinacion ya que reciben mas cargas. Esto nos sirve para ver como se va a comportar la pieza en una situación de estrés como la que viven estas mismas.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O/4.png" alt="Desbaste"></p>
-<p>Ademas podemos ver las partes &ldquo;críticas&rdquo;, que son las que mas peso tienen.</p>
-<p><img src="/img/DISE%C3%91O/4.2.png" alt="Desbaste"></p>
+<p><img src="/img/IMP/4.png" alt="Desbaste"></p>
+<p><img src="/img/IMP/4.2.png" alt="Desbaste"></p>
 <ol start="5">
-<li>Gracias a lo que hicimos anteriormente podemos plantearnos un problema: Cómo se podria optimizar esta pieza desde el pto de vista del peso (perfil alar),ya que lo mas importante de esta pieza es que mantenga el menor peso posible, para que pueda consumir menos combustible por la misma distancia de vuelo. Aquí nos fiajmos específicamente en las partes más críticas.</li>
+<li>Así es como queda estructurado el anillo para imprimirse. (Perímetros interiores y exteriores)</li>
 </ol>
-<p><img src="/img/DISE%C3%91O/4.3.png" alt="Desbaste"></p>
-<h2 id="pasos-tutorial-diseño-generativo">Pasos Tutorial Diseño Generativo</h2>
-<ol>
-<li>Primera condición del diseño generativo es partir por preservar la geometría. El software decidira como juntar estas piezas entre ellas a traves del diseño generativo.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/1.png" alt="Desbaste"></p>
-<ol start="2">
-<li>Segunda condicion de un diseño generativo; geometrias obstaculos. Son aquellas geometrías que no pueden tener material. Rueda y el uge, no pueden tener material, por que osino no podría girar la rueda. Entonces mis piezas obstaculos las seleccionamos:</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/2.png" alt="Desbaste"></p>
-<p>Entonces estamos dejando los ejes libres para después poder apernar las piezas.
-(Apagamos el obstaculo)</p>
-<ol start="3">
-<li>Le asignamos una restriccion estructural a las piezas en donde van pernos por lo que van fijas. La pieza está anclada.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/3.png" alt="Desbaste"></p>
-<ol start="4">
-<li>Ahora elegimos las cargas que tendrán las piezas. Aquí estoy decidinedo en que lugar del ensamble se va a recibir la fuerza de este diseño. Le ponemos &ldquo;-1000N en el eje Z&rdquo;.
-Ejercen fuerza en el eje Z &ldquo;hacia abajo&rdquo;.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/4.png" alt="Desbaste"></p>
-<ol start="5">
-<li>Declarle el objetivo para lo que yo quiero esta pieza. Minimizamos la masa de la pieza.
-Safety factor:2 - Que la pieza sea resistente 2 veces ese rasgo de seguridad. Así aseguramos al doble la carga.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/5.png" alt="Desbaste"></p>
+<p><img src="/img/IMP/5.png" alt="Desbaste"></p>
 <ol start="6">
-<li>
-<p>Técnica de manufacturación.</p>
-</li>
-<li>
-<p>Seleccionamos los materiales que queramos usar.
-Aluminio, titanio, Inconel y un plástico.</p>
-</li>
+<li>Proceso</li>
 </ol>
-<p><img src="/img/DISE%C3%91O2/6.png" alt="Desbaste"></p>
-<ol start="8">
-<li>Previsualizamos como se va a comportar. Como la pieza podría ser optimizada. Una manera de acelerar un poco el desarrollo. (Nos muestra mas o menos como sería la figura). Una vez realizado esto, podremos generar.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/7.png" alt="Desbaste"></p>
-<ol start="9">
-<li>Generamos el modelo.</li>
-</ol>
-<p><img src="/img/DISE%C3%91O2/9.1.png" alt="Desbaste"></p>
-<p><img src="/img/DISE%C3%91O2/9.png" alt="Desbaste"></p>
+<p><img src="/img/IMP/6.png" alt="Desbaste"></p>
 
 </div>
 </div>
