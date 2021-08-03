@@ -128,61 +128,74 @@
 <h1 class="title">4- Simulación y Diseño Generativo</h1>
 <div class="content ">
   <hr>
-<h1 id="0-diseño-original">0. Diseño Original</h1>
-<h1 id="1-plantear-el-probelma">1. Plantear el probelma</h1>
-<h1 id="2-simular-el-problema">2. Simular El problema</h1>
-<h1 id="3-propuesta-de-diseño-generativo">3. Propuesta de Diseño Generativo</h1>
-<h1 id="4-guia-para-el-rediseño-de-la-pieza">4. Guia para el rediseño de la pieza</h1>
-<h1 id="desbaste-cnc">Desbaste CNC</h1>
-<p>Ejemplo de desbaste de producto, en este caso con el respaldo de la Silla Fresia.</p>
-<h1 id="indice">Indice</h1>
+<h1 id="diseño-generativo">Diseño Generativo</h1>
+<p><img src="/img/DG.jpg" alt="Desbaste"></p>
+<blockquote>
+<p>Los ingenieros logran un peso ligero, mejoras de rendimiento, consolidación de piezas o sostenibilidad| Créditos: Autodesk</p>
+</blockquote>
+<p>El diseño generativo es un proceso iterativo que genera múltiples salidas de diseño cumpliendo con las restricciones predefinidas. Este proceso se utiliza en varios campos, como el arte, la arquitectura y el diseño de productos para producir salidas de sonidos, imágenes a modelos CAD.</p>
+<p>Uno de sus mayores beneficios es que este es un método rápido para explorar las posibilidades de diseño.</p>
+<p>El diseño generativo se basa en restricciones del mundo real y requisitos de rendimiento. Este está cambiando el proceso de diseño para que los ingenieros y diseñadores pueden resolver desafíos y encontrar soluciones de diseño que no hubieran podido concebir por sí mismos.</p>
+<h2 id="simulación-y-optimización-por-diseño-generativo">Simulación y Optimización por diseño generativo</h2>
+<p>Concepto para pasar de un modelo original a uno simulado. A través de este proceso seremos capaces de simular un problema que detectamos.</p>
+<p>El proposito es entender nuestro diseño y planteamiento original, para mediante las herramientas de simualcion y  diseño generativo entender como esta pieza se puede rediseñar según la perfomance deseada.</p>
+<p>En este ejercicio trabajaremos con un Perfil Alar; perfil de avión; pieza o sercha. La cual sabemos que se repite en el eje Y.</p>
+<p>Nuestro propósito es descubrir y solucionar el
+como podemos hacer mas liviana el ala. El peso del ala es directamente proporcional al cuanto consume el avion en combustible, al alivianar la pieza obtenemos mayor eficiencia energetica del avión. Mediante la simulación avanzamos en diseño para ver la carga estructural, y hacer una mucho mas ligera.</p>
+<p>Para conseguir el proposito existen 5 pasos guías por los que debemos pasar para lograrlo:</p>
 <ul>
-<li><a href="#Proceso-de-Desbaste">Proceso de Desbaste</a></li>
-<li><a href="#Videos">Videos</a></li>
+<li>
+<ol start="0">
+<li>Diseño Original</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Plantear el probelma</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Simular El problema</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Propuesta de Diseño Generativo</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Guia para el rediseño de la pieza</li>
+</ol>
+</li>
 </ul>
-<h1 id="proceso-digital-de-desbastes-y-cortes-paralelos">Proceso Digital de Desbastes y cortes paralelos.</h1>
-<p>Generamos un cuerpo que tapara el respaldo en todo su contorno. Luego generamos otro rectangulo que solamente estuviera en el contorno del respaldo, el cual guiaria a la Fresa a delimitar su proceso.</p>
-<p><img src="/img/DESBASTE/1.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/2.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/3.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/4.png" alt="Desbaste"></p>
-<p>Luego para el siguiente corte, que serian los cortes paralelos, debiamos seleccionar el rectangulo hecho que estaba delimitado por el respaldo junto a este mismo para que la fresa pudiera trabajar la madera de entre medio respetando las delimitaciones.</p>
-<p><img src="/img/DESBASTE/5.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/6.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/7.png" alt="Desbaste"></p>
-<p>Para el siguiente paso debiamos copiar y pegar el setup hecho para el corte paralelo y a este cambiarle su configuraacion para que ese corte fuese perpendicular al anterior.
-Asi la fresa no trabajaria solo en un sentido si no que en ambos, cubriendo mas aun la superficie de madera.</p>
-<p><img src="/img/DESBASTE/8.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/9.png" alt="Desbaste"></p>
-<p>Al simular los cortes, nos pudimos dar cuenta de que habian colisiones entre la fresa y la madera. Esto ocurre debido a que la fresa no es lo suficientemente larga por lo que su parte superior topa con el cuerpo de madera.</p>
-<p><img src="/img/DESBASTE/10.png" alt="Desbaste"></p>
-<p>Para solucionar esto tuvimos que modificar la fresa y alargar su longitud por debajo de la parte &ldquo;metalica&rdquo;. Asi entonces la fresa no toparia con el cuerpo y podria hacer bien su trabajo sin colisionar.</p>
-<p><img src="/img/DESBASTE/11.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/12.png" alt="Desbaste"></p>
-<p>Para terminar, cambie la fresa para los procesos de corte paralelo ya que tal y como nos explico el profesor estafresa tiene un mejor acabado para estos cortes. Tambien tuve que alargar la fresa para que esta no colisionara con el cuerpo de madera.</p>
-<p><img src="/img/DESBASTE/13.png" alt="Desbaste"></p>
-<p><img src="/img/DESBASTE/14.png" alt="Desbaste"></p>
-<p>Finalmente en esta foto se pueden apreciar todos los cortes de desbaste y paralelos hechos al cuerpo de madera, los cuales formaran el respaldo de la silla fresia.</p>
-<p><img src="/img/DESBASTE/20.png" alt="Desbaste"></p>
-<p><a href="#top">[Volver Arriba]</a></p>
-<h1 id="videos-simulación">Videos Simulación</h1>
-<p><div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/desbaste1.mp4"  type="video/mp4">
-    </video>
-</div>
-<div>
-    <video 
-    width="100%" 
-    height="450" 
-    autoplay muted loop controls preload>
-    <source src="/img/desbaste2.mp4"  type="video/mp4">
-    </video>
-</div></p>
-<p><a href="#top">[Volver Arriba]</a></p>
+<p>Para el primer ejercicio la pieza que más nos interesa optimizar es la que se repita mas. En este caso:</p>
+<p>El Ala
+<img src="/img/DISE%C3%91O/apa.png" alt="Desbaste"></p>
+<h2 id="pasos-ejercicio-ala-avión">Pasos Ejercicio Ala Avión</h2>
+<ol>
+<li>Definimos el material de la pieza.</li>
+</ol>
+<p><img src="/img/DISE%C3%91O/1.png" alt="Desbaste"></p>
+<ol start="2">
+<li>Planteamos el problema: Ponemos las restriccion; estas serán las piezas del ala que no van a tener movimiento. Fijas al emsamble.</li>
+</ol>
+<p><img src="/img/DISE%C3%91O/2.png" alt="Desbaste"></p>
+<ol start="3">
+<li>Aplicamos las cargas. En la parte inferior del ala, que es donde se esta soportando toda la carga y peso del avión le pusimos una carga de 1000 newton (100 kilos). pre chequiamos para ver si es que podemos hacer el estudio.</li>
+</ol>
+<p><img src="/img/DISE%C3%91O/3.png" alt="Desbaste"></p>
+<ol start="4">
+<li>Simulamos el problema: Apretar la tecla &ldquo;Solve&rdquo;, para saber como se va a comportar la pieza. las partes mas vulnerables son las mas delgadas, ahi es donde debemos tener mas precaucion y determinacion ya que reciben mas cargas. Esto nos sirve para ver como se va a comportar la pieza en una situación de estrés como la que viven estas mismas.</li>
+</ol>
+<p><img src="/img/DISE%C3%91O/4.png" alt="Desbaste"></p>
+<p>Ademas podemos ver las partes &ldquo;críticas&rdquo;, que son las que mas peso tienen.</p>
+<p><img src="/img/DISE%C3%91O/4.2.png" alt="Desbaste"></p>
+<ol start="5">
+<li>Gracias a lo que hicimos anteriormente podemos plantearnos un problema: Cómo se podria optimizar esta pieza desde el pto de vista del peso (perfil alar),ya que lo mas importante de esta pieza es que mantenga el menor peso posible, para que pueda consumir menos combustible por la misma distancia de vuelo. Aquí nos fiajmos específicamente en las partes más críticas.</li>
+</ol>
+<p><img src="/img/DISE%C3%91O/4.3.png" alt="Desbaste"></p>
 
 </div>
 </div>
