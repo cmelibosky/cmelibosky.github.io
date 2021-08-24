@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>Ejemplos Markdown</title>
+      <link>https://cmelibosky.github.io/docs/markdown/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://cmelibosky.github.io/docs/markdown/</guid>
+      <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
+    </item>
+    
+    <item>
       <title>5- Impresión 3D</title>
       <link>https://cmelibosky.github.io/docs/6impresion3d/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
@@ -62,29 +71,47 @@
     </item>
     
     <item>
-      <title>6- Materiales para moldes de Impresión</title>
-      <link>https://cmelibosky.github.io/docs/7moldesimp3d/</link>
+      <title>6- Video Complementario 1</title>
+      <link>https://cmelibosky.github.io/docs/7videocomp1/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/7moldesimp3d/</guid>
+      <guid>https://cmelibosky.github.io/docs/7videocomp1/</guid>
       <description>Moldes de impresión 3d.</description>
     </item>
     
     <item>
-      <title>7- Moldes de Impresión 3D</title>
-      <link>https://cmelibosky.github.io/docs/8moldes2/</link>
+      <title>7- Video completario 2</title>
+      <link>https://cmelibosky.github.io/docs/8videocomp2/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/8moldes2/</guid>
+      <guid>https://cmelibosky.github.io/docs/8videocomp2/</guid>
+      <description>Simulación 3D.</description>
+    </item>
+    
+    <item>
+      <title>8- Pruebas de Materiales</title>
+      <link>https://cmelibosky.github.io/docs/9pruebasmateriales/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://cmelibosky.github.io/docs/9pruebasmateriales/</guid>
       <description>Moldes de impresión 3d.</description>
     </item>
     
     <item>
-      <title>8- Modelo final Molde Impresión 3D</title>
-      <link>https://cmelibosky.github.io/docs/9molde/</link>
+      <title>9- Iteración Materiales y Prueba de Molde</title>
+      <link>https://cmelibosky.github.io/docs/10iteracionmatymol/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://cmelibosky.github.io/docs/9molde/</guid>
+      <guid>https://cmelibosky.github.io/docs/10iteracionmatymol/</guid>
+      <description>Moldes de impresión 3d.</description>
+    </item>
+    
+    <item>
+      <title>10- Molde Final</title>
+      <link>https://cmelibosky.github.io/docs/11moldefinal/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://cmelibosky.github.io/docs/11moldefinal/</guid>
       <description>Molde de impresión 3d.</description>
     </item>
     
@@ -95,15 +122,6 @@
       
       <guid>https://cmelibosky.github.io/docs/ejemplo/</guid>
       <description>Uso de los Shortcodes para agregar contenido en el sitio de documentación.</description>
-    </item>
-    
-    <item>
-      <title>Ejemplos Markdown</title>
-      <link>https://cmelibosky.github.io/docs/markdown/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://cmelibosky.github.io/docs/markdown/</guid>
-      <description>Ejemplos de uso de lenguaje Markdown para redactar las publicaciones.</description>
     </item>
     
   </channel>

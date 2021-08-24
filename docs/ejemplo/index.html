@@ -111,27 +111,35 @@
     </li>
     
     <li class="">
+      <a href="https://cmelibosky.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
       <a href="https://cmelibosky.github.io/docs/6impresion3d/">5- Impresión 3D</a>
     </li>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/7moldesimp3d/">6- Materiales para moldes de Impresión</a>
+      <a href="https://cmelibosky.github.io/docs/7videocomp1/">6- Video Complementario 1</a>
     </li>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/8moldes2/">7- Moldes de Impresión 3D</a>
+      <a href="https://cmelibosky.github.io/docs/8videocomp2/">7- Video completario 2</a>
     </li>
     
     <li class="">
-      <a href="https://cmelibosky.github.io/docs/9molde/">8- Modelo final Molde Impresión 3D</a>
+      <a href="https://cmelibosky.github.io/docs/9pruebasmateriales/">8- Pruebas de Materiales</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/10iteracionmatymol/">9- Iteración Materiales y Prueba de Molde</a>
+    </li>
+    
+    <li class="">
+      <a href="https://cmelibosky.github.io/docs/11moldefinal/">10- Molde Final</a>
     </li>
     
     <li class="active ">
       <a href="https://cmelibosky.github.io/docs/ejemplo/">Ejemplos Shortcodes</a>
-    </li>
-    
-    <li class="">
-      <a href="https://cmelibosky.github.io/docs/markdown/">Ejemplos Markdown</a>
     </li>
     
   </ul>
@@ -157,7 +165,7 @@
 <h3 id="agregar-iframe-de-fusion-360">Agregar Iframe de Fusion 360</h3>
 <div>
     <iframe 
-    src= "https://alumnos4751.autodesk360.com/shares/public/SH919a0QTf3c32634dcf31b1d2d8291da66b?mode=embed"
+    src=''
     width="100%" 
     height="450" 
     allowfullscreen="true" 
@@ -172,7 +180,18 @@
 <h5 id="código-iframe-de-fusion-360-markdown">Código <code>Iframe de Fusion 360</code> Markdown</h5>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; iframe-fusion link=&#34;https://myhub.autodesk360.com/ue2ce4e3a/shares/public/SH56a43QTfd62c1cd968edbffd1ceafd2764?mode=embed&#34; &gt;}}
 </code></pre></div><h5 id="código-iframe-de-fusion-360-html-shortcode">Código <code>Iframe de Fusion 360</code> HTML Shortcode</h5>
-<p><a href="#contenido-shortcodes">[Volver Arriba]</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div&gt;
+    &lt;iframe 
+    src=&#39;{{ index .Params &#34;link&#34; }}&#39;
+    width=&#34;100%&#34; 
+    height=&#34;450&#34; 
+    allowfullscreen=&#34;true&#34; 
+    webkitallowfullscreen=&#34;true&#34; 
+    mozallowfullscreen=&#34;true&#34;  
+    frameborder=&#34;0&#34;&gt;
+    &lt;/iframe&gt;    
+&lt;/div&gt;
+</code></pre></div><p><a href="#contenido-shortcodes">[Volver Arriba]</a></p>
 <!-- raw HTML omitted -->
 <hr>
 <h3 id="agregar-video-local-mp4">Agregar Video Local MP4</h3>
